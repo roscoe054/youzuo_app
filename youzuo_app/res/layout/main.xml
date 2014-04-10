@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:id="@+id/imageMain"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/white"
+        android:scaleType="fitCenter"
+        android:src="@drawable/main" />
+
+    <cn.android.utils.SlidingMenuView
+        android:id="@+id/sliding_menu_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/sliding_tab"
+            android:layout_width="150dp"
+            android:layout_height="fill_parent"
+            android:background="#bb000000"
+            android:orientation="vertical"
+            android:padding="5dip" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="17dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="13dp"
+                android:paddingRight="80dp"
+                android:text="未登录"
+                android:textColor="#EEEEEE"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#888888" />
+
+            <ListView
+                android:id="@+id/drawer_list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/sliding_body"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </FrameLayout>
+    </cn.android.utils.SlidingMenuView>
+
+</RelativeLayout>

@@ -1,0 +1,173 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <!-- line1 Restaurant title -->
+	<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:background="@drawable/res_title"
+        android:orientation="horizontal" >
+    <Button 
+        android:id="@+id/bt_book"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#EEEEEE"
+        android:textSize="24dp"
+        android:text="预定"
+        />
+	</LinearLayout>
+	
+    <!-- line2 evaluation and waitingnum -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="14dp"
+   		android:layout_marginRight="14dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/info_des_evaluation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="评价 : "
+            android:textColor="#666666" />
+
+        <TextView
+            android:id="@+id/info_evaluation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="here is evaluation"
+            android:textColor="@drawable/actionBarColor" />
+
+        <TextView
+            android:id="@+id/info_des_waitingnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="等待人数 : "
+            android:textColor="#666666" />
+
+        <TextView
+            android:id="@+id/info_waitingnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="here is waitingnum"
+            android:textColor="@drawable/actionBarColor" />
+    </LinearLayout>
+
+    <!-- line3 intro -->
+
+    <TextView
+        android:id="@+id/info_introduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="here is waitingnum"
+        android:layout_marginLeft="14dp"
+    	android:layout_marginRight="14dp"
+        android:layout_marginBottom="7dp"
+        android:textColor="#666666" />
+
+    <!-- 分割线 -->
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="7dp"
+        android:background="#EEEEEE" />
+
+    <!-- line4 tel -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="14dp"
+    	android:layout_marginRight="14dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/info_des_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="电话 : "
+            android:textColor="#666666" />
+
+        <TextView
+            android:id="@+id/info_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="here is tel"
+            android:textColor="#666666" />
+    </LinearLayout>
+
+    <!-- line5 location -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="14dp"
+    	android:layout_marginRight="14dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/info_des_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="地址 : "
+            android:textColor="#666666" />
+
+        <TextView
+            android:id="@+id/info_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="here is waitingnum"
+            android:textColor="#666666" />
+    </LinearLayout>
+    
+    <!-- 分割线 -->
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="7dp"
+        android:background="#EEEEEE" />
+    
+    <!-- line6 commons -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="14dp"
+    	android:layout_marginRight="14dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商家评论"
+            android:textSize="16dp"
+            android:textColor="#666666" />
+
+        <TextView
+            android:id="@+id/info_hes_commons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  暂无评论"
+            android:textColor="#666666" />
+    </LinearLayout>
+
+</LinearLayout>
